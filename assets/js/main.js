@@ -1,7 +1,7 @@
 (function() {
     $(window).on('load', function() {
-        $('.loader').delay(2000).fadeOut();
-        $('.page-loader').delay(2000).fadeOut('slow');
+        $('.loader').delay(1200).fadeOut();
+        $('.page-loader').delay(1200).fadeOut('slow');
     });
 
     const select = (el, all = false) => {
