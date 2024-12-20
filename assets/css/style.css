@@ -545,10 +545,10 @@ section {
   }
   
   /* Create three equal columns that floats next to each other */
-  .celebrityportfolio .column {
+  /* .celebrityportfolio .column {
     float: left;
     display: none;
-  }
+  } */
   
   /* Clear floats after rows */ 
   .celebrityportfolio .row:after {
@@ -749,6 +749,76 @@ section {
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
+
+.keycampaigns h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .keycampaigns .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .keycampaigns .row,
+  .keycampaigns .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  /* .keycampaigns .column {
+    float: left;
+    display: none;
+  } */
+  
+  /* Clear floats after rows */ 
+  .keycampaigns .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  /* .keycampaigns .content {
+    background-color: white;
+    padding: 10px;
+  } */
+  
+  /* The "show" class is added to the filtered elements */
+  .keycampaigns .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .keycampaigns .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    
+  }
+  
+  .keycampaigns .btn:hover {
+    background-color: #ffc451;
+    color: black;
+  }
+  
+  .keycampaigns .btn.active {
+    background-color: #ffc451;
+    color: black;
+  }
+
+  .keycampaigns .content {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(21, 21, 21, 0.6);
+    height: 279px !important;
+  }
 
 /*--------------------------------------------------------------
 # clients 1 Section
